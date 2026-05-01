@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <a href="../index.html">Back to index</a>
+    <hr>
+    <section>
+        <article>
+            <h2>Imports order</h2>
+            <hr>
+            <p>When importing modules, it's important to follow a consistent order to improve readability and
+                maintainability of your code. A common convention is to group imports into three categories:</p>
+            <ol>
+                <li><strong>External libraries:</strong> These are third-party modules that you install via package
+                    managers like npm or yarn. They should be imported first.</li>
+                <li><strong>Internal modules:</strong> These are modules that you have created within your project. They
+                    should be imported after external libraries.</li>
+                <li><strong>Stylesheets:</strong> If you're importing CSS or other stylesheets, they should be imported
+                    last.</li>
+            </ol>
+            <p>Following this order helps to clearly distinguish between different types of dependencies and makes it
+                easier for developers to understand the structure of the codebase.</p>
+        </article>
+        <hr>
+        <article>
+            <h2>the var keyword</h2>
+            <p>The <code>var</code> keyword is used to declare variables in JavaScript. However, it has some quirks and
+                limitations compared to the modern <code>let</code> and <code>const</code> keywords.</p>
+            <p>One of the main issues with <code>var</code> is that it is function-scoped, which means that variables
+                declared with <code>var</code> are accessible throughout the entire function in which they are declared,
+                regardless of block scope. This can lead to unintended consequences and bugs in your code.</p>
+            <p>In contrast, <code>let</code> and <code>const</code> are block-scoped, meaning that they are only
+                accessible within the block in which they are declared. This helps to prevent accidental variable
+                shadowing and makes it easier to manage variable scope.</p>
+            <p>In general, it's recommended to avoid using <code>var</code> in modern JavaScript development and instead
+                use <code>let</code> and <code>const</code> for better code clarity and maintainability.</p>
+        </article>
+    </section>
+
+    <script src="js/myscript.js"></script>
+    <script type="text/javascript" src="js/alerts.js"></script>
+
+</body>
+
+</html>
