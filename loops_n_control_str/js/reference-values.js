@@ -22,11 +22,48 @@ console.log({juan, ana});
 
 let spiderMan = { name : 'Peter'};
 
+const changeName = ({...person}) => {
+    spiderMan.name = 'peter';
+    return spiderMan;
+}
+
 /**
  * to breack the reference to the spiderMan object its necesary to add {...} before the 
  * assign.
  * this way, ironMan is a diferent object in memory.
  */
-let ironMan = { ...spiderMan };
+let ironMan = changeName('Tony');
+ironMan = {...spiderMan};
 ironMan.name = 'Tony';
 console.log({spiderMan, ironMan});
+
+// lets try the same but with arrays
+
+const fruits = ['Apple', 'Pinapple', 'Pear'];
+const anotherFruits = fruits;
+
+// lets breack the reference in this new array
+const anotherFruitsArray = [...fruits];
+
+anotherFruits.push('Wathermellon');
+anotherFruitsArray.push('Mangoes');
+
+console.table({fruits, anotherFruits, anotherFruitsArray});
+
+/**
+ * there is a better way to brack the reference to the original array, and is usign ths .slice() method.
+ * this method will return a new array from the original.
+ */
+
+console.time('slice');
+const slicedFruitsArray = fruits.slice();
+console.timeEnd('slice');
+
+console.time('spread');
+const spreadedFruitsArray = [...fruits]
+console.timeEnd('spread');
+
+slicedFruitsArray.push('Orange');
+spreadedFruitsArray.push('Cucumber');
+
+console.table({fruits,anotherFruits,anotherFruitsArray,slicedFruitsArray,spreadedFruitsArray});
