@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Loops and control structures</title>
 </head>
+
 <body>
     <header>
         <a href="../index.html"> Back to the index </a>
         <hr>
         <h1>Talking about loops and control structures</h1>
-        <p>this section is really importan. these are the building block that determine the flow of your code. some of the topic that were gona talk about in this section are:</p>
+        <p>this section is really importan. these are the building block that determine the flow of your code. some of
+            the topic that were gona talk about in this section are:</p>
         <ul>
             <li>flow control Structures</li>
             <li>variables given by reference</li>
@@ -23,9 +27,45 @@
     </header>
     <section>
         <article>
-
+            <h2>Passing arguments by Value and reference</h2>
+            <p>In JavaScript, the behavior of "passing" depends on whether you are using primitive or non-primitive data
+                types. Technically, JavaScript is always pass-by-value, but the "value" passed for objects and arrays is
+                the reference to that data in memory</p>
+            <p>There is quick comparison in the next table</p>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>feature</th>
+                        <th>Primitives (pass by value)</th>
+                        <th>Non-Primitives (pass by reference*)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="first-column">Data types</td>
+                        <td>Numbers, Strings, booleans, nulls, undefined</td>
+                        <td>Objects, Arrays, functions</td>
+                    </tr>
+                    <tr>
+                        <td class="first-column">how it works</td>
+                        <td>Creates a copy of the actual data</td>
+                        <td>Passes a copy of the reference(Adress)</td>
+                    </tr>
+                    <tr>
+                        <td class="first-column">Effect of changes</td>
+                        <td>Changes inside a functions, do not affect the original</td>
+                        <td>Modify the properties affects the original data</td>
+                    </tr>
+                    <tr>
+                        <td class="first-column">Reassignment</td>
+                        <td>Reassigning the variable replaces the value</td>
+                        <td>Reassigning the variable replaces the link to the original</td>
+                    </tr>
+                </tbody>
+            </table>
         </article>
     </section>
     <script type="text/javascript" src="js/reference-values.js"></script>
 </body>
+
 </html>
