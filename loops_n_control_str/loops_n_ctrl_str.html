@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css"
+        integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="../css/styles.css">
     <title>Loops and control structures</title>
@@ -85,7 +86,7 @@
             <div class="form-container">
                 <form class="pure-form">
                     <div class="form-row">
-                        <label for="frnumber"> First number 
+                        <label for="frnumber"> First number
                             <input type="number" id="frnumber" name="frnumber" class="text-field">
                         </label>
                         <label for="scnumber">Second number
@@ -103,7 +104,7 @@
             <h2>What day is today ?</h2>
             <div class="pure-u-5-5">
                 <p>Lets ask to javascript what day is today</p>
-                <button type="button" class="pure-button-primary" id="dayCheckButton">Lets Check</button>                
+                <button type="button" class="pure-button-primary" id="dayCheckButton">Lets Check</button>
             </div>
             <div class="pure-u-5-5">
                 <span>Today is </span><span id="today-label"></span>
@@ -111,8 +112,87 @@
         </article>
         <hr>
         <article class="pure-g container">
-            <h2>Boolean logic</h2>
-            <p>A boolean function is a mathematical function that maps arguments to a value, where the allowable values of range (the function arguments) and domain (the function value) are just one of two values— true and false (or 0 and 1). The study of boolean functions is known as Boolean logic. </p>
+            <div class="pure-u-1">
+                <h2>Boolean logic</h2>
+                <p>A boolean function is a mathematical function that maps arguments to a value, where the allowable values
+                    of range (the function arguments) and domain (the function value) are just one of two values— true and
+                    false (or 0 and 1). The study of boolean functions is known as Boolean logic. </p>
+                <p>Lets see an example of the operators in the next tables</p>
+            </div>
+            <div class="pure-u-1-1">
+                <div class="pure-u-2-5 container">
+                    <div class="pure-u-1">
+                        <span>The And operator</span>
+                    </div>
+                    <table class="pure-table pure-table-bordered">
+                        <thead>
+                            <tr>
+                                <th>X</th>
+                                <th>Y</th>
+                                <th>X && y</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>true</td>
+                                <td>true</td>
+                                <td>true</td>
+                            </tr>
+                            <tr>
+                                <td>true</td>
+                                <td>false</td>
+                                <td>false</td>
+                            </tr>
+                            <tr>
+                                <td>false</td>
+                                <td>true</td>
+                                <td>false</td>
+                            </tr>
+                            <tr>
+                                <td>false</td>
+                                <td>false</td>
+                                <td>false</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="pure-u-2-5 container">
+                    <div class="pure-u-1">
+                        <span>The OR operator</span>
+                    </div>
+                    <table class="pure-table pure-table-bordered">
+                        <thead>
+                            <tr>
+                                <th>X</th>
+                                <th>Y</th>
+                                <th>X || y</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>true</td>
+                                <td>true</td>
+                                <td>true</td>
+                            </tr>
+                            <tr>
+                                <td>true</td>
+                                <td>false</td>
+                                <td>false</td>
+                            </tr>
+                            <tr>
+                                <td>false</td>
+                                <td>true</td>
+                                <td>false</td>
+                            </tr>
+                            <tr>
+                                <td>false</td>
+                                <td>false</td>
+                                <td>false</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </article>
     </section>
 
