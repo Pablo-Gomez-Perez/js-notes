@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <title>Loops and control structures</title>
 </head>
 
@@ -64,8 +66,59 @@
                 </tbody>
             </table>
         </article>
+        <hr>
+        <article>
+            <h2>The if else </h2>
+            <p>The if...else statement is a fundamental control flow structure in programming that executes a block of
+                code if a condition is true, and an alternative block if it is false. It acts as a decision-making tool,
+                allowing programs to follow different paths based on runtime evaluation. Here is an example</p>
+            <pre>
+                <code>
+                    if ( [Expression to evaluate] ){
+                        [... Action to execute ...]
+                    } else {
+                        [... Do another thing instead ...]
+                    }
+                </code>
+            </pre>
+            <p>Lets check an example with the next fields. were gonna check what given number is biger.</p>
+            <div class="form-container">
+                <form class="pure-form">
+                    <div class="form-row">
+                        <label for="frnumber"> First number 
+                            <input type="number" id="frnumber" name="frnumber" class="text-field">
+                        </label>
+                        <label for="scnumber">Second number
+                            <input type="number" id="scnumber" name="scnumber" class="text-field">
+                        </label>
+                    </div>
+                    <div class="form-row">
+                        <button type="button" class="btn" id="btn-check" name="btn-check">Lets Check</button>
+                    </div>
+                </form>
+            </div>
+        </article>
+        <hr>
+        <article class="pure-g container">
+            <h2>What day is today ?</h2>
+            <div class="pure-u-5-5">
+                <p>Lets ask to javascript what day is today</p>
+                <button type="button" class="pure-button-primary" id="dayCheckButton">Lets Check</button>                
+            </div>
+            <div class="pure-u-5-5">
+                <span>Today is </span><span id="today-label"></span>
+            </div>
+        </article>
+        <hr>
+        <article class="pure-g container">
+            <h2>Boolean logic</h2>
+            <p>A boolean function is a mathematical function that maps arguments to a value, where the allowable values of range (the function arguments) and domain (the function value) are just one of two values— true and false (or 0 and 1). The study of boolean functions is known as Boolean logic. </p>
+        </article>
     </section>
+
     <script type="text/javascript" src="js/reference-values.js"></script>
+    <script type="text/javascript" src="js/if-else.js"></script>
+    <script type="text/javascript" src="js/boolean-logic.js"></script>
 </body>
 
 </html>
