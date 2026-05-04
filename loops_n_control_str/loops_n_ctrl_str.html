@@ -114,8 +114,10 @@
         <article class="pure-g container">
             <div class="pure-u-1">
                 <h2>Boolean logic</h2>
-                <p>A boolean function is a mathematical function that maps arguments to a value, where the allowable values
-                    of range (the function arguments) and domain (the function value) are just one of two values— true and
+                <p>A boolean function is a mathematical function that maps arguments to a value, where the allowable
+                    values
+                    of range (the function arguments) and domain (the function value) are just one of two values— true
+                    and
                     false (or 0 and 1). The study of boolean functions is known as Boolean logic. </p>
                 <p>Lets see an example of the operators in the next tables</p>
             </div>
@@ -194,11 +196,31 @@
                 </div>
             </div>
         </article>
+        <hr>
+        <article class="pure-g container">
+            <div class="pure-u-1">
+                <h2>The ternary operator</h2>
+                <p>The ternary operator in JavaScript, also known as the conditional operator, is a shorthand for
+                    writing if...else statements in a single line. It is called "ternary" because it is the only
+                    JavaScript operator that takes three operands</p>
+                <p>Lets see</p>
+            </div>
+            <div class="pure-u-1">
+                <pre>
+                    <code>
+                        const age = 20;
+                        const canVote = age >= 18 ? "Yes" : "No";
+                        const checkStatus = (isReady) => isReady ? "Online" : "Offline";
+                    </code>
+                </pre>
+            </div>
+        </article>
     </section>
 
     <script type="text/javascript" src="js/reference-values.js"></script>
     <script type="text/javascript" src="js/if-else.js"></script>
     <script type="text/javascript" src="js/boolean-logic.js"></script>
+    <script type="text/javascript" src="js/ternary-operator.js"></script>
 </body>
 
 </html>
